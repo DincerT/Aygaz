@@ -1,0 +1,142 @@
+/* Genel Stiller */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header, nav, main, section, article, aside, footer {
+    margin: 10px;
+    padding: 10px;
+}
+
+/* Header Stilleri */
+header {
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+.logo {
+    float: left;
+}
+
+.logo img {
+    width: 100px; /* İhtiyaca göre boyutunu ayarlayın */
+    height: auto;
+    margin-right: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+nav ul li a:hover {
+    color: #000;
+}
+
+/* Main ve Section Stilleri */
+main, section, article, aside {
+    display: block;
+    float: left;
+    width: calc(50% - 20px);
+}
+
+section {
+    clear: both;
+}
+
+article {
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+/* Footer Stilleri */
+footer {
+    clear: both;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+article {
+    text-align: center;
+}
+
+article img {
+    width: 300px; /* İhtiyaca göre boyutunu ayarlayın */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+main {
+    padding-left: 500px;
+}
+
+article {
+    text-align: center;
+}
+
+article img {
+    width: 300px; /* İhtiyaca göre boyutunu ayarlayın */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+article h3,
+article p {
+    width: 300px; /* Fotoğraf genişliği ile aynı olacak şekilde ayarlayın */
+    margin: 0 auto;
+}
+
+.logo img {
+    width: 200px; /* Önceki genişliğin iki katı */
+    height: auto;
+    margin-right: 20px;
+}
+.sepete-ekle-btn {
+    background-color: #4CAF50; /* Yeşil */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+/* Responsive Tasarım */
+
+@media screen and (max-width: 768px) {
+    /* Genel Stiller */
+    main {
+        padding-left: 0; /* Soldan boşluk kaldır */
+    }
+
+    /* Main ve Section Stilleri */
+    main, section, article, aside {
+        width: 100%; /* Tam genişlik */
+        float: none;
+    }
+
+    article h3,
+    article p {
+        width: 100%; /* Başlık ve paragraf genişliği */
+    }
+}
